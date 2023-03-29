@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Cost</title>
+</head>
+<body>
+    <h1>User Cost</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Usage Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.user }}</td>
+                <td>{{ user.total_time }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
